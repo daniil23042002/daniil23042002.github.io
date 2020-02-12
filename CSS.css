@@ -1,0 +1,253 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#mainmenu {
+    position: relative;
+    background: #444444;
+    height: 40px;
+    /* margin: 30px 0;*/
+    padding: 0;
+    float: left;
+    width: 100%;
+    z-index: 10
+}
+
+#mainmenu ul {
+    clear: left;
+    position: relative;
+    right: 50%;
+    height: 40px;
+    float: right;
+    text-align: center;
+    font: 15px Arial, Helvetica, sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+/** Основные пункты **/
+#mainmenu>ul>li {
+    position: relative;
+    left: 50%;
+    float: left;
+    height: 40px;
+    padding: 0;
+    margin: 0
+}
+
+#mainmenu>ul>li>a {
+    border-left: 1px solid #666;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 40px;
+}
+
+#mainmenu>ul>li:first-child>a {
+    border: none
+}
+
+#mainmenu>ul>li:hover>a,
+#mainmenu>ul>li.hover>a,
+#mainmenu>ul>li.active>a {
+    color: #fff
+}
+
+#mainmenu>ul>li:hover,
+#mainmenu>ul>li.hover,
+#mainmenu>ul>li.active {
+    background: #666
+}
+
+/* Выпадающие подпункты */
+#mainmenu ul li ul {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    display: none;
+    list-style: none;
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+    width: 200px
+}
+
+#mainmenu>ul>li ul li {
+    background-color: #666;
+    position: relative;
+    left: 0;
+    display: list-item;
+    float: none;
+    height: auto;
+    margin: 0;
+    text-align: left;
+}
+
+#mainmenu ul li ul li a {
+    border-bottom: 1px solid #999;
+    display: block;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+#mainmenu ul li ul li.parent a {
+    position: relative;
+}
+
+#mainmenu ul li ul>li.parent>a::before {
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    height: 6px;
+    width: 6px;
+}
+
+#mainmenu ul li ul li:hover,
+#mainmenu ul li ul li.hover {
+    background-color: #444
+}
+
+#mainmenu ul li:hover ul,
+#mainmenu ul li.hover ul {
+    display: block
+}
+
+/* Выпадающие пункты второго уровня */
+#mainmenu ul li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+#mainmenu ul li ul li ul {
+    top: 0;
+    left: 200px;
+    margin: 0 0 0 20px;
+    width: 180px
+}
+
+.gruppa {
+    position: absolute;
+    top: 55px;
+    left: 550px;
+    font-size: 30px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: #444;
+
+    color: white;
+}
+
+.gruppa1 {
+    position: absolute;
+    top: 145px;
+    left: 550px;
+    font-size: 30px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: #444;
+
+    color: white;
+}
+
+.gruppa2 {
+    position: absolute;
+    top: 235px;
+    left: 550px;
+    font-size: 30px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: #444;
+
+    color: white;
+}
+
+.img {
+    padding-top: 40px;
+    width: 450px;
+    height: 300px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.img>img {
+    padding-top: 50px;
+    width: 500px;
+}
+
+#table-stolb {
+    width: 60px;
+    text-align: center;
+
+}
+
+#table-canter {
+    text-align: center
+}
+
+#table {
+
+    width: 610px;
+    float: left;
+    border: 1px solid black;
+}
+
+tr:nth-child(2n+3) {
+    background: #e8edff;
+}
+
+tr:nth-child(2n+2) {
+    background: #C2D0FF;
+}
+
+tr:nth-child(1) {
+    background: silver;
+}
+
+td:nth-child(2n),
+td:nth-child(3n) {
+    padding-left: 10px;
+}
+
+#Position-1 {
+    float: inline-start;
+    padding-left: 64.5px;
+    padding-right: 0px;
+    padding-top: 10px;
+}
+
+#Position-2 {
+    float: inline-end;
+    padding-left: 0px;
+    padding-right: 64.5px;
+    padding-top: 10px;
+
+}
+
+#Преподователи {
+    width: 120px;
+}
+
+#table-zagolo {
+    text-align: left;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    padding-left: 10px;
+}
